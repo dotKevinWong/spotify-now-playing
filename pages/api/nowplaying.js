@@ -19,6 +19,7 @@ export default async function handler(_, res) {
   const album = song.item.album.name;
   const albumImageUrl = song.item.album.images[0].url;
   const songUrl = song.item.external_urls.spotify;
+  const albumUrl = song.item.album.external_urls.spotify;
   const currentDuration = song.progress_ms;
   const totalDuration = song.item.duration_ms;
 
@@ -33,6 +34,7 @@ export default async function handler(_, res) {
     artist,
     isPlaying,
     songUrl,
+    albumUrl,
     title,
     currentDuration,
     totalDuration,
