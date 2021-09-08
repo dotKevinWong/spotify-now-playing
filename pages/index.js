@@ -26,6 +26,7 @@ export default function Home() {
       shadow="base"
       rounded="lg"
     >
+      <title>Now Playing – KEVIN WONG</title>
       <HStack mb="2">
         <Circle bg="green.500" color="white" rounded="full" size="8">
           <Box size="24" as={FaSpotify} />
